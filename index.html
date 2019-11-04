@@ -8,6 +8,34 @@
     <link rel="stylesheet" href="all.css">
 </head>
 <body>
-    
+    <script>
+        for (let i = 3; i <= 15; i++) {
+            for (let j = 1; j <= 15; j++) {
+                console.log(i + '*' + j + '=' + i * j);
+            }
+        }
+
+        let kg = 65;
+        let m = 1.75;
+        function bmi(w, h) {
+            let result = w / h / h;
+            console.log("你的BMI值為" + result.toFixed(1));
+            if (result < 18.5) {
+                console.log("※！警告！※體重過輕")
+            } else if (result>=18.5 && result < 24) {
+                console.log("正常範圍")
+            } else if (result>=24 && result < 27) {
+                console.log("※！警告！※體重過重")
+            } else if (result>=27 && result < 30) {
+                console.log("胖子")
+            } else if (result>=30 && result < 35) {
+                console.log("大胖子")
+            } else {
+                console.log("沒救了")
+            }
+        }
+
+        bmi(kg,m);
+    </script>
 </body>
 </html>
